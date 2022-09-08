@@ -199,20 +199,20 @@ const Bank = () => {
                   <Row>
                     <Col sm="12">
                       <Controller
-                        control={controller}
+                        control={control}
                         name="CLMax"
                         render={({ field: { onChange, value, ref } }) => (
                           <FormGroup floating>
                             <Input
                               id="CLMax"
                               type="text"
-                              placeholder="Maximum Faiz Miktarı"
+                              placeholder="Maximum Para Miktarı"
                               ref={ref}
                               onChange={onChange}
                               value={value}
                               invalid={errors.CLMax !== undefined}
                             />
-                            <Label for="CLMax">Maximum Faiz Miktarı</Label>
+                            <Label for="CLMax">Maximum Para Miktarı</Label>
                           </FormGroup>
                         )}
                       />
@@ -349,13 +349,13 @@ const Bank = () => {
                             <Input
                               id="HLMax"
                               type="text"
-                              placeholder="Maximum Faiz Miktarı"
+                              placeholder="Maximum Para Miktarı"
                               innerRef={ref}
                               onChange={onChange}
                               value={value}
                               invalid={errors.HLMax !== undefined}
                             />
-                            <Label for="HLMax">Maximum Faiz Miktarı</Label>
+                            <Label for="HLMax">Maximum Para Miktarı</Label>
                           </FormGroup>
                         )}
                       />
